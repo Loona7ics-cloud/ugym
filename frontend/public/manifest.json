@@ -1,6 +1,6 @@
 {
-  "name": "openGym",
-  "short_name": "openGym",
+  "name": "uGym",
+  "short_name": "uGym",
   "description": "Personal gym & body weight tracker",
   "start_url": "./",
   "scope": "./",

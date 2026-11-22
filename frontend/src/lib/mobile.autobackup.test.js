@@ -52,7 +52,7 @@ beforeEach(() => {
 describe('writeAutoBackup', () => {
   it('writes today\'s copy into Documents/openGym, not the Documents root', async () => {
     await writeAutoBackup({ workouts: [{ id: 'w1' }] })
-    expect(AUTO_BACKUP_DIR).toBe('openGym')
+    expect(AUTO_BACKUP_DIR).toBe('uGym')
     expect(JSON.parse(h.files.get('DOCUMENTS/openGym/' + backup(todayISO())))).toEqual({ workouts: [{ id: 'w1' }] })
     expect(h.files.has('DOCUMENTS/' + backup(todayISO()))).toBe(false)
   })

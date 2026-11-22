@@ -305,7 +305,7 @@ async function nativeReverse(pos) {
  * question (the page drops it).
  */
 export async function findPlaces(q, { near = null, suggest = suggestPlaces } = {}) {
-  // openGym Offline (lib/build-caps.js): no search to ask.
+  // uGym Offline (lib/build-caps.js): no search to ask.
   if (offlineBuild()) return []
   const query = String(q || '').trim().replace(/\s+/g, ' ')
   if (query.length < SHORT) return []

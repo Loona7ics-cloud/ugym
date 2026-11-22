@@ -28,7 +28,7 @@ export function wearView (wear, channel) {
   return { ...base, key: wear.reachable ? 'on-watch' : 'on-watch-away' }
 }
 
-/** A watch's own line: whether openGym is on it, and whether it is in reach. */
+/** A watch's own line: whether uGym is on it, and whether it is in reach. */
 export function wearWatchLine (w) {
   if (!w?.installed) return 'not-installed'
   return w.reachable || w.connected ? 'connected' : 'away'
